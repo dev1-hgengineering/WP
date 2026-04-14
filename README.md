@@ -217,3 +217,17 @@ To see all available backups, run the script without arguments:
 - **Edit** any achievement inline
 - **Delete** achievements with a confirmation prompt
 - **Download** all achievements as a formatted `.txt` file
+
+## Installing DB
+```bash
+brew install postgresql
+brew services start postgresql
+createuser -s postgres  
+psql -U postgres
+createuser -s postgres -U chanukaelvitigala
+```
+
+## Useful Commands
+```bash
+lsof -ti :8000 | xargs kill -9   
+```
